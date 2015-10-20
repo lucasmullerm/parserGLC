@@ -1,16 +1,9 @@
-S P L K N T
-a b A B | ; -
+S A B C
+a b c
 S
-S P
-S P;S
-P N-L
-L K
-L K|L
-K N
-K T
-K NK
-K TK
-N A
-N B
-T a
-T b
+S *
+S aAC
+S bBC
+C c
+A aC
+B bC
