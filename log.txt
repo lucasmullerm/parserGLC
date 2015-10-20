@@ -1,0 +1,42 @@
+Gramatica: 
+Simbolos nao-terminais:  {'N', 'P', 'L', 'S', 'K', 'T'}
+Simbolos terminais    :  {'|', 'a', 'b', 'B', ';', 'A', '-'}
+Simbolo inicial       :  S
+Produções             : 
+	 K => NK
+	 S => P;S
+	 K => N
+	 L => K|L
+	 T => b
+	 S => P
+	 N => B
+	 T => a
+	 N => A
+	 L => K
+	 K => TK
+	 K => T
+	 P => N-L
+----------------------------------------------------------
+A cadeia A-aAa|B;B-b pertence a gramatica fornecida
+Derivacao:
+	 S
+	 P;S
+	 P;P
+	 P;N-L
+	 P;N-K
+	 P;N-T
+	 P;N-b
+	 P;B-b
+	 N-L;B-b
+	 N-K|L;B-b
+	 N-K|K;B-b
+	 N-K|N;B-b
+	 N-K|B;B-b
+	 N-TK|B;B-b
+	 N-TNK|B;B-b
+	 N-TNT|B;B-b
+	 N-TNa|B;B-b
+	 N-TAa|B;B-b
+	 N-aAa|B;B-b
+	 A-aAa|B;B-b
+----------------------------------------------------------
